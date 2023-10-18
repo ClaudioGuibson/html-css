@@ -17,9 +17,21 @@
             border: 1px solid black;
             padding:10px;
         }
+        caption{
+            font-size:1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        tbody > tr: :nth-child(odd) { /* 2n-1*/
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){ /*2n */
+            background-color: lightgray;
         }
         td.num{
             text-align: right;
@@ -31,6 +43,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            caption
             THEAD
                 tr, td, th
             TBOY
@@ -39,10 +52,11 @@
                 tr, td, th
     -->
     <table>
+        <caption>População das  Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>População</th>
+                <th scope="col">estado</th>
+                <th scope="col" style="width:50px;">População</th>
             </tr>
         </thead>
         <tbody>
