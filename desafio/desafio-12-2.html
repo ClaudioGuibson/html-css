@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 13 segunda parte</title>
+    <style>
+        body{
+            background:linear-gradient(to right,black, yellow);
+        }
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-size:60px;
+            padding: 20px;
+        }
+        table{
+            border-collapse:separate;
+            width: 300px;
+            background-color: black;
+            color: white;
+            position: relative;
+            top: 100px;
+            left: 300px;
+        }
+        td{
+            border:2px solid white;
+            padding: 10px;
+            text-align: center;
+            box-shadow: inset 2px 2px 6px rgba(255, 255, 255, 0.602);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Segundo desafio de tabela</h1>
+    <hr>
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+</body>
+</html>
